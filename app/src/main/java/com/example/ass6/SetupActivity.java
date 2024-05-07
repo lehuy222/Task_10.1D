@@ -55,7 +55,7 @@ public class SetupActivity extends AppCompatActivity {
 
         // Validate the inputs
         if (validateInputs(username, password, confirmPassword, email, confirmEmail, phone)) {
-            db.addUser(new User(username, password, email, phone, Arrays.asList()));
+            db.addUser(new User(username, password, email, phone, Arrays.asList(), "Default"));
             Toast.makeText(this, "Account created successfully!", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(SetupActivity.this, InterestSelectionActivity.class);

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4">
+
+    <TextView
+        android:id="@+id/tvHistoryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:id="@+id/llQuestionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvHistoryHeader"
+        android:padding="8dp">
+
+        <!-- CardView for Question 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Question 1"
+                    android:textSize="18sp"
+                    android:background="#cccccc" />
+
+                <!-- Answers for Question 1 -->
+                <RadioGroup
+                    android:id="@+id/rgQuestion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion1Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff00"
+                        android:text="Answer 1 (Your Answer)" />
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion1Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 2 (Correct Answer)"
+                        android:textColor="#00ff00" />
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion1Answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 3" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Question 3"
+                    android:textSize="18sp"
+                    android:background="#cccccc" />
+
+                <!-- Answers for Question 1 -->
+                <RadioGroup
+                    android:id="@+id/rgQuestion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion3Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00ff00"
+                        android:text="Answer 1 (Your Answer)" />
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion3Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 2 " />
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion3Answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 3" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Question 1"
+                    android:textSize="18sp"
+                    android:background="#cccccc" />
+
+                <!-- Answers for Question 1 -->
+                <RadioGroup
+                    android:id="@+id/rgQuestion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion2Answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00ff00"
+                        android:text="Answer 1 (Correct Answer)" />
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion2Answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 2 " />
+
+                    <RadioButton
+                        android:id="@+id/rbQuestion2Answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Answer 3 (Your Answer)"
+                        android:textColor="#ff00"/>
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp" />
+
+</RelativeLayout>

@@ -8,13 +8,15 @@ public class User {
     private String email;
     private String phone;
     private List<String> interest;
+    private String subscription;
 
-    public User(String username, String password, String email, String phone, List<String> interest) {
+    public User(String username, String password, String email, String phone, List<String> interest, String subscription) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.phone = phone;
         this.interest = interest;
+        this.subscription = subscription;
     }
 
     // Getters and Setters
@@ -41,4 +43,10 @@ public class User {
     public void setInterest(List<String> interest) {
         this.interest = interest;
     }
+
+    public String getSubscription(){
+        return subscription;
+    }
+
+
 }

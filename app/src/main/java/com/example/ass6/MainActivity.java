@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("dcm", usernameEt.getText().toString());
+                Log.d("????", usernameEt.getText().toString());
                 login(usernameEt.getText().toString());
 
             }

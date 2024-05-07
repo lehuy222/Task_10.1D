@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class UserMainActivity extends AppCompatActivity {
 
     TextView tv_greeting;
-    Button btn_task_action;
+    Button btn_task_action, btnViewProfile, btnViewHistory, btnUpgradeAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,9 @@ public class UserMainActivity extends AppCompatActivity {
 
         tv_greeting = findViewById(R.id.tv_greeting);
         btn_task_action = findViewById(R.id.btn_task_action);
+        btnViewProfile = findViewById(R.id.btnViewProfile);
+        btnViewHistory = findViewById(R.id.btnViewHistory);
+        btnUpgradeAccount = findViewById(R.id.btnUpgradeAccount);
 
         String username = getIntent().getStringExtra("USERNAME");
         tv_greeting.setText("Hello "+ username);
@@ -34,6 +37,34 @@ public class UserMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent new_intent = new Intent(UserMainActivity.this, QuizActivity.class);
+                new_intent.putExtra("USERNAME", username);
+                startActivity(new_intent);
+            }
+        });
+
+        btnViewProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent new_intent = new Intent(UserMainActivity.this, ProfileActivity.class);
+                new_intent.putExtra("USERNAME", username);
+                startActivity(new_intent);
+            }
+        });
+
+        btnViewHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent new_intent = new Intent(UserMainActivity.this, HistoryActivity.class);
+                new_intent.putExtra("USERNAME", username);
+                startActivity(new_intent);
+            }
+        });
+
+        btnUpgradeAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent new_intent = new Intent(UserMainActivity.this, UpgradeActivity.class);
+                new_intent.putExtra("USERNAME", username);
                 startActivity(new_intent);
             }
         });

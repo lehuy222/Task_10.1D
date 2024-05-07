@@ -92,4 +92,46 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- Buttons Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_task"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Button for View Profile -->
+        <Button
+            android:id="@+id/btnViewProfile"
+            android:layout_width="139dp"
+            android:layout_height="61dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:text="View Profile"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="149dp"
+            android:layout_height="67dp"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="View History"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnUpgradeAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFC107"
+            android:text="Upgrade Account"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
 </RelativeLayout>

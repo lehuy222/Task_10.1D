@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupCardType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioVisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visa" />
+
+        <RadioButton
+            android:id="@+id/radioMasterCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MasterCard" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Serial Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextExpireDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expire Date (MM/YY)"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/editTextCSC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CSC"
+        android:inputType="numberPassword" />
+
+    <VideoView
+        android:id="@+id/videoViewPaymentSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+</LinearLayout>
